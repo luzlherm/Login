@@ -46,6 +46,7 @@ body{
     flex-direction: column;
     width: 100%;
     max-width: 560px;
+    z-index: 9;
 
 }
 
@@ -60,7 +61,7 @@ body{
 
 
 
-.form input[type=text], .form input[type=email], .form input[type=password]{
+.form input[type=text], .form input[type=name],.form input[type=email], .form input[type=password]{
 height: 42px;
 }
 
@@ -75,7 +76,9 @@ height: 42px;
     max-width: 560px;
     cursor: pointer;
     margin-bottom: 18px;
+    margin-top: 18px;
     transition: background-color 0.5s linear;
+    z-index: 2;
 }
 
 .button:hover{
@@ -113,3 +116,41 @@ Link{
     padding: 0 24px;
 
 }
+
+.info-img{
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin-bottom: 18px;
+    
+}
+
+.subtitle{
+    max-width: 400px;
+    font-size: 38px;
+    color: #FFF;
+    margin-bottom: 18px;
+
+}
+
+.description{
+    max-width: 400px;
+    line-height: 150%;
+    color: #FFF;
+}
+
+.form::before{
+    content: '';
+    position: absolute;
+    background-image: url('../img/code.svg');
+    background-size: 90px;
+    background-repeat: no-repeat;
+    z-index: 1;
+    width: 90px;
+    height: 90px;
+    opacity: 0.3;
+    bottom: -50px;
+    right: -35px;
+}
+
+
